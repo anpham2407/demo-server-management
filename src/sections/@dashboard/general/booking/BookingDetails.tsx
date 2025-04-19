@@ -58,7 +58,7 @@ interface Props extends CardProps {
   title?: string;
   subheader?: string;
   tableLabels: any;
-  tableData: RowProps[];
+  tableData: any;
 }
 
 export default function BookingDetails({
@@ -77,7 +77,7 @@ export default function BookingDetails({
             <TableHeadCustom headLabel={tableLabels} />
 
             <TableBody>
-              {tableData.map((row) => (
+              {tableData.map((row: any) => (
                 <BookingDetailsRow key={row.id} row={row} />
               ))}
             </TableBody>
@@ -175,7 +175,7 @@ function BookingDetailsRow({ row }: BookingDetailsRowProps) {
         </TableCell>
 
         <TableCell>
-          {row.infomation.map((spec, index) => (
+          {row.infomation.map((spec: any, index: any) => (
             <div key={index} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Iconify icon={spec.icon} style={{ color: '#3B82F6', width: 20, height: 20 }} />
               <span>{spec.label}</span>

@@ -1,18 +1,18 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-interface ServerInfo {
-  id: string;
-  name: string;
-  ip: string;
-  status: "active" | "inactive" | "maintenance";
-  sshKey: string;
-  firewallEnabled: boolean;
-  os: string;
-  cpu: string;
-  ram: string;
-  createdAt: string;
-}
+export interface ServerInfo {
+    id: string;
+    name: string;
+    ip: string;
+    status: "active" | "inactive" | "maintenance";
+    sshKey: string;
+    firewallEnabled: boolean;
+    os: string;
+    cpu: string;
+    ram: string;
+    createdAt: string;
+}  
 
 interface ServerDetailProps {
   server: ServerInfo;

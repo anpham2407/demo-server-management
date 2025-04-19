@@ -46,7 +46,7 @@ import {
 } from '../../../components/table';
 // sections
 import { UserTableToolbar, UserTableRow } from '../../../sections/@dashboard/user/list';
-import ServerDetail from 'src/components/ServerDetail';
+import ServerDetail, { ServerInfo } from '../../../components/ServerDetail';
 
 // ----------------------------------------------------------------------
 
@@ -75,18 +75,19 @@ const TABLE_HEAD = [
   { id: '' },
 ];
 
-const serverData = {
+const serverData: ServerInfo = {
   id: "srv-01",
   name: "Web Server Production",
   ip: "192.168.1.101",
-  status: "active",
+  status: "active", // ✅ phải là 'active' | 'inactive' | 'maintenance'
   sshKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDexample",
   firewallEnabled: true,
   os: "Ubuntu 22.04 LTS",
   cpu: "Intel Xeon 4-core",
   ram: "16GB",
-  createdAt: "2024-12-01T14:30:00Z"
+  createdAt: "2024-12-01T14:30:00Z",
 };
+
 // ----------------------------------------------------------------------
 
 UserList.getLayout = function getLayout(page: React.ReactElement) {
