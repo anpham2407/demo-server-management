@@ -36,7 +36,7 @@ const navConfig = [
   {
     subheader: 'general',
     items: [
-      { title: 'server', path: PATH_DASHBOARD.general.booking, icon: ICONS.dashboard },
+      { title: 'server', path: PATH_DASHBOARD.root, icon: ICONS.dashboard },
       {
         title: 'user',
         path: PATH_DASHBOARD.user.root,
