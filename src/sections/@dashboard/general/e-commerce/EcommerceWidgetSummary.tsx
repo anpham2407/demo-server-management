@@ -72,7 +72,7 @@ export default function EcommerceWidgetSummary({
             sx={{
               ...(percent < 0 && {
                 color: 'error.main',
-                bgcolor: (theme) => alpha(theme.palette.error.main, 0.16),
+                bgcolor: (theme: any) => alpha(theme.palette.error.main, 0.16),
               }),
             }}
           >

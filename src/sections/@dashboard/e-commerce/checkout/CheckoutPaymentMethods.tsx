@@ -72,7 +72,7 @@ export default function CheckoutPaymentMethods({ paymentOptions, cardOptions }: 
                         key={title}
                         sx={{
                           ...(selected && {
-                            boxShadow: (theme) => theme.customShadows.z20,
+                            boxShadow: (theme: any) => theme.customShadows.z20,
                           }),
                           ...(hasChildren && { flexWrap: 'wrap' }),
                         }}

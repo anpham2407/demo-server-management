@@ -52,8 +52,8 @@ export default function AnalyticsWidgetSummary({
     >
       <IconWrapperStyle
         sx={{
-          color: (theme) => theme.palette[color].dark,
-          backgroundImage: (theme) =>
+          color: (theme: any) => theme.palette[color].dark,
+          backgroundImage: (theme: any) =>
             `linear-gradient(135deg, ${alpha(theme.palette[color].dark, 0)} 0%, ${alpha(
               theme.palette[color].dark,
               0.24

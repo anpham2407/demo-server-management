@@ -80,8 +80,8 @@ export default function BankingWidgetSummary({
     >
       <IconWrapperStyle
         sx={{
-          color: (theme) => theme.palette[color].lighter,
-          bgcolor: (theme) => theme.palette[color].dark,
+          color: (theme: any) => theme.palette[color].lighter,
+          bgcolor: (theme: any) => theme.palette[color].dark,
         }}
       >
         <Iconify icon={icon} width={24} height={24} />

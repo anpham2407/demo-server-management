@@ -82,11 +82,11 @@ function AuthorItem({ author, index }: AuthorItemProps) {
         sx={{
           ...(index === 1 && {
             color: 'info.main',
-            bgcolor: (theme) => alpha(theme.palette.info.main, 0.08),
+            bgcolor: (theme: any) => alpha(theme.palette.info.main, 0.08),
           }),
           ...(index === 2 && {
             color: 'error.main',
-            bgcolor: (theme) => alpha(theme.palette.error.main, 0.08),
+            bgcolor: (theme: any) => alpha(theme.palette.error.main, 0.08),
           }),
         }}
       >
