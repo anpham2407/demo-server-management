@@ -161,7 +161,7 @@ function BookingDetailsRow({ row }: BookingDetailsRowProps) {
   };
 
   const handleClickDetail = () => {
-    router.push('/dashboard/server/list/');
+    router.push('/dashboard/server/detail/');
     handleCloseMenu();
   };
 
@@ -212,12 +212,17 @@ function BookingDetailsRow({ row }: BookingDetailsRowProps) {
             actions={
               <>
                 <MenuItem onClick={handleClickDetail}>
-                  <Iconify icon={'mdi:account'} /> Detail
+                  <Iconify icon={'mdi:eye-outline'} /> Detail
                 </MenuItem>
                 <MenuItem onClick={handleAssignUser}>
                   <Iconify icon={'mdi:account'} /> Assign User
                 </MenuItem>
-                <MenuItem onClick={handleCloseMenu}>Delete</MenuItem>
+                <Divider sx={{ borderStyle: 'dashed' }} />
+
+                <MenuItem onClick={() => {}} sx={{ color: 'error.main' }}>
+                  <Iconify icon={'eva:trash-2-outline'} />
+                  Delete
+                </MenuItem>
               </>
             }
           />
