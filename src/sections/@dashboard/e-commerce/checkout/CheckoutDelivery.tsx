@@ -66,7 +66,7 @@ export default function CheckoutDelivery({ deliveryOptions, onApplyShipping }: P
                       key={delivery.value}
                       sx={{
                         ...(selected && {
-                          boxShadow: (theme) => theme.customShadows.z20,
+                          boxShadow: (theme: any) => theme.customShadows.z20,
                         }),
                       }}
                     >
